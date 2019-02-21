@@ -22,7 +22,9 @@
 @import "atoms/borders/types";
 
 
-/** ANIMATIO
+/** ANIMATION **/
+@import "atoms/animations/bell";
+
 body {
   font-size: $font-size-text;
   color: $primary-color-text;
