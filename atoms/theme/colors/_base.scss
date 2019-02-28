@@ -10,5 +10,7 @@ $secondary-color-text: #FFFFFF !default;
 
 $contrast-color: #FFED82 !default;
 
+$gradient-rainbow: linear-gradient(141deg, rgba($primary-color-light, 0.5) 0%, rgba($primary-color, 0.5) 51%, rgba($secondary-color, 0.5) 75%);
+$gradient-brand: linear-gradient(141deg, $primary-color-dark 0%, $primary-color 51%, $primary-color-dark 75%);
 
 

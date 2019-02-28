@@ -1,5 +1,12 @@
 .a-bg {
   background-color: $primary-color;
+  &--gradient {
+    background-image: $gradient-brand;
+  }
+  &--brand {
+    background-color: transparent;
+    background-image: $gradient-rainbow;
+  }
   &--dark {
     background-color: $primary-color-dark;
   }
@@ -34,16 +41,16 @@
     background-size: cover;
   }
   &--grayscale {
-    filter:grayscale(100%);
+    filter: grayscale(100%);
   }
   &--image {
     position: relative;
     background-color: rgba($mono-color-9, 0.6);
     &::after {
       content: "";
-      background-image: url(https://i.pinimg.com/originals/a3/04/16/a304168113a5f756762b40e998e21b04.jpg);
       -webkit-background-size: cover;
       background-size: cover;
+      background-position: center;
       top: 0;
       left: 0;
       bottom: 0;
@@ -51,10 +58,6 @@
       position: absolute;
       z-index: -1;
     }
-    &--technology {
-      &::after {
-        background-image: url(https://thesweetsetup.com/wp-content/uploads/2015/05/Fantastical-Hero-1.jpg);
-      }
-    }
   }
 }
+

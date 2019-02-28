@@ -7,7 +7,12 @@
     }
   }
   &__description {
-    border: 1px solid black;
-    border-top: 5px solid black;
+    border-width: 1px;
+    border-top-width: 5px;
+    border-style: solid;
   }
+  &__description--black {
+    border-color: $mono-color-9;
+  }
+
 }

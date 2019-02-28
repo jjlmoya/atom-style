@@ -1,0 +1,25 @@
+.a-separator {
+  height: 0;
+  border: none;
+  &::after {
+    content: ' ';
+    display: block;
+    height: 5px;
+  }
+  &--rainbow {
+    &::after {
+      background-image: $gradient-rainbow;
+    }
+  }
+  &--animate {
+    &::after {
+      animation: bg-transition 3s ease infinite;
+      background-size: 300%;
+    }
+  }
+  &--slim {
+    &::after {
+      height: 1px;
+    }
+  }
+}
