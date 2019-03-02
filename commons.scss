@@ -1,5 +1,3 @@
-/** ATOM DESIGN **/
-/** RESET  **/
 @import "utils/thirdParty/normalize";
 @import "utils/medias/index";
 /** THEME & Branding**/
@@ -23,18 +21,15 @@
 /** ANIMATION **/
 @import "atoms/animations/bell";
 @import "atoms/animations/bg";
-
 body {
   font-size: $font-size-text;
   color: $primary-color-text;
   font-family: $font, sans-serif;
 }
-
 /** LAYOUT  **/
 @import "layout/basic/flex";
 @import "layout/basic/columns";
 @import "layout/basic/positions";
-
 /** UTILS  **/
 @import "utils/layers/index";
 @import "utils/devices/index";
