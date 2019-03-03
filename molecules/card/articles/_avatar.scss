@@ -1,0 +1,17 @@
+.ml-article-avatar {
+  &__content {
+    height: 150px;
+    margin-left: -75px;
+    padding: 10px 10px 10px 100px;
+    border-radius: 0 40px 40px 0px;
+  }
+
+  &__picture {
+    height: 150px;
+    z-index: 1;
+  }
+  &__title {
+    align-self: start;
+  }
+
+}
