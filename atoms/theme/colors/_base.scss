@@ -1,16 +1,15 @@
-$primary-color: #2196F3 !default;
-$primary-color-dark: #1976D2 !default;
-$primary-color-light: #BBDEFB !default;
-$primary-color-text: #212121 !default;
+:root {
+  --primary-color: #2196F3;
+  --primary-color--dark: #1976D2;
+  --primary-color--light: #BBDEFB;
 
-$secondary-color: #7C4DFF !default;
-$secondary-color-dark: darken($secondary-color, 10) !default;
-$secondary-color-light: lighten($secondary-color, 10) !default;
-$secondary-color-text: #FFFFFF !default;
+  --secondary-color: #7C4DFF9;
+  --secondary-color--dark: #6933ff;
+  --secondary-color--light: #8f66ff;
 
-$contrast-color: #FFED82 !default;
+  --primary-color-text: #212121;
+  --secondary-color-text: #FFFFFF;
 
-$gradient-rainbow: linear-gradient(141deg, rgba($primary-color-light, 0.5) 0%, rgba($primary-color, 0.5) 51%, rgba($secondary-color, 0.5) 75%);
-$gradient-brand: linear-gradient(141deg, $primary-color-dark 0%, $primary-color 51%, $primary-color-dark 75%);
+  --contrast-color: #FFED82;
 
-
+}

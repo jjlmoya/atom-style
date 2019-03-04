@@ -6,9 +6,9 @@
     display: block;
     height: 5px;
   }
-  &--rainbow {
+  &--light {
     &::after {
-      background-image: $gradient-rainbow;
+      background-image: $gradient-light;
     }
   }
   &--animate {

@@ -1,11 +1,16 @@
-$primary-color: #00778B;
-$primary-color-dark: #01404b;
-$primary-color-light: #00bcd0;
-$primary-color-text: black;
+:root {
+  --primary-color: #00778B;
+  --primary-color--dark: #01404b;
+  --primary-color--light: #00bcd0;
 
-$secondary-color: #EF426F;
-$secondary-color-dark: darken(#388E3C, 10%);
-$secondary-color-light: lighten(#C8E6C9, 10%);
-$secondary-color-text: white;
+  --secondary-color: #EF426F;
+  --secondary-color--dark: #ed2a5d;
+  --secondary-color--light: #f15981;
+
+  --primary-color-text: #000000;
+  --secondary-color-text: #FFFFFF;
+
+  --contrast-color: #FFED82;
+}
 
 @import "fonts/lato";

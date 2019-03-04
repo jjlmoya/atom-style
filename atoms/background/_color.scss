@@ -1,11 +1,9 @@
 .a-bg {
   background-color: $primary-color;
   &--gradient {
-    background-image: $gradient-brand;
-  }
-  &--brand {
-    background-color: transparent;
-    background-image: $gradient-rainbow;
+    &--light {
+      background-image: $gradient-light;
+    }
   }
   &--dark {
     background-color: $primary-color-dark;
