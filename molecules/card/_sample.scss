@@ -1,0 +1,13 @@
+.reverseSky {
+  --primary-color--dark: red;
+  --primary-color: green;
+}
+
+.ml-card-sample {
+  &__title {
+
+  }
+  &--small {
+    max-width: 200px;
+  }
+}

@@ -1,11 +1,16 @@
-$secondary-color: #00BCD4;
-$secondary-color-dark: darken($secondary-color, 10%);
-$secondary-color-light: lighten($secondary-color, 10%);
-$secondary-color-text: #e7f5f5;
+.reverse-sky {
+  --primary-color: #03A9F4;
+  --primary-color--dark: #0286c2;
+  --primary-color--light: #2ebcfc;
 
-$primary-color: #03A9F4;
-$primary-color-dark: darken($primary-color, 10%);
-$primary-color-light: lighten($primary-color, 10%);
-$primary-color-text: #efefef;
+  --secondary-color: #00BCD4;
+  --secondary-color--dark: #008fa1;
+  --secondary-color--light: #08e3ff;
 
-@import "fonts/istok";
+  --primary-color-text: #efefef;
+  --secondary-color-text: #e7f5f5;
+
+  --contrast-color: #FFED82;
+}
+
+

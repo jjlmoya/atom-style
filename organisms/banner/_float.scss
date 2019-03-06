@@ -1,5 +1,5 @@
 .og-banner-float {
-  box-shadow: 0 0px 10px 1px #00414c;
+  box-shadow: 0 0px 10px 1px $primary-color-dark;
   transform: translateY(300px);
   transition: 1s ease-in-out;
   &.is-active {
@@ -9,10 +9,11 @@
     position: absolute;
     top: -30px;
     left: 0;
-    box-shadow: inset 0 0 0 5px #3ab9cd, 0 0px 5px 5px rgb(0, 65, 76);
+    box-shadow: inset 0 0 0 5px $primary-color-light,
+    0 0px 5px 5px $primary-color-dark;
   }
   .c-icon {
-    color: #ef426f;
+    color: $secondary-color;
     font-size: 40px;
   }
   .c-icon-close {

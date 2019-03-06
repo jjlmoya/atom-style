@@ -1,8 +1,1 @@
-:root {
-  --gradient-light: linear-gradient(141deg,
-          var(--primary-color--light) 0%,
-          var(--primary-color) 51%,
-          var(--primary-color--light) 75%);
-}
-
-$gradient-light: var(--gradient-light);
+$gradient-contrast: linear-gradient(141deg, var(--primary-color--light) 0%, var(--primary-color--dark) 75%);

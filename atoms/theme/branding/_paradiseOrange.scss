@@ -1,12 +1,16 @@
-$primary-color: #f5a631;
-$primary-color-dark: darken($primary-color, 10%);
-$primary-color-light: lighten($primary-color, 10%);
-$primary-color-text: #d9fbff;
+.paradise-orange {
+  --primary-color: #f5a631;
+  --primary-color--dark: #e88f0b;
+  --primary-color--light: #f7bb62;
 
-$secondary-color: #81ffff;
-$secondary-color-dark: darken($secondary-color, 10%);
-$secondary-color-light: lighten($secondary-color, 10%);
-$secondary-color-text: #462603;
+  --secondary-color: #81ffff;
+  --secondary-color--dark: #4effff;
+  --secondary-color--light: #b4ffff;
 
-@import "fonts/istok";
+  --primary-color-text: #d9fbff;
+  --secondary-color-text: #462603;
+
+  --contrast-color: #FFED82;
+}
+
 

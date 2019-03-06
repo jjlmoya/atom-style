@@ -8,7 +8,7 @@
   }
   &--light {
     &::after {
-      background-image: $gradient-light;
+      background-image: $gradient-contrast;
     }
   }
   &--animate {
