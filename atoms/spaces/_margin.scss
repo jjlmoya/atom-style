@@ -12,7 +12,7 @@
   &-40 {
     margin: 40px;
   }
-  &__x {
+  &--x {
     margin: 0 10px;
     &-20 {
       margin: 0 20px;
@@ -21,7 +21,7 @@
       margin: 0 40px;
     }
   }
-  &__y {
+  &--y {
     margin: 10px 0;
     &-20 {
       margin: 20px 0;
@@ -29,8 +29,18 @@
     &-40 {
       margin: 40px 0;
     }
+    &--bottom {
+      margin-top: 0;
+      margin-bottom: 10px;
+      &-20 {
+        margin-bottom: 20px;
+      }
+      &-40 {
+        margin-bottom: 40px;
+      }
+    }
   }
-  &__minus {
+  &--minus {
     margin-top: -10px;
     &-20 {
       margin-top: -20px;

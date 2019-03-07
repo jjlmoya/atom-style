@@ -2,6 +2,13 @@
   position: relative;
   &--absolute {
     position: absolute;
+    &--center {
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
   }
   &--fixed {
     position: fixed;
@@ -9,7 +16,7 @@
     left: 0;
     &--bottom {
       top: inherit;
-      bottom:0;
+      bottom: 0;
     }
   }
   &--sticky {

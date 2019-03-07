@@ -1,0 +1,35 @@
+.og-slider-product-curved {
+  height: 500px;
+  border-radius: 0 0 0 200px;
+  &__image {
+    width: auto;
+    height: 300px;
+  }
+  &__button {
+    bottom: -15px;
+    right: 25%;
+  }
+  &__content {
+    &--bottom {
+      position: absolute;
+      width: 100%;
+      bottom: 30px;
+    }
+  }
+}
+
+@media only screen and (max-width: $media-size-m) {
+  .og-slider-product-curved {
+    height: 300px;
+    border-radius: 0 0 0 100px;
+    &__image {
+      width: auto;
+      height: 140px;
+    }
+    &__button {
+      bottom: -15px;
+      right: 25%;
+    }
+
+  }
+}

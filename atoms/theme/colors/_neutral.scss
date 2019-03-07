@@ -10,6 +10,8 @@
   --mono-color-7: #343434;
   --mono-color-8: #1f1f1f;
   --mono-color-9: #000000;
+  --shadow-dark: rgba(0, 0, 0, 0.3);
+  --shadow-white: rgba(255, 255, 255, 0.3);
 }
 
 $mono-color-0: var(--mono-color-0);
@@ -22,3 +24,5 @@ $mono-color-6: var(--mono-color-6);
 $mono-color-7: var(--mono-color-7);
 $mono-color-8: var(--mono-color-8);
 $mono-color-9: var(--mono-color-9);
+$shadow-white: var(--shadow-white);
+$shadow-dark: var(--shadow-dark);
