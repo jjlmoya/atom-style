@@ -1,10 +1,7 @@
 a.a-button, .a-button {
   font-size: $font-size-xs;
-  &--xs {
-    padding: 2px 4px
-  }
   &--s {
-    padding: 5px 10px;
+    padding: 15px;
     font-size: $font-size-s;
   }
   &--m {

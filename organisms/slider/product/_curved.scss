@@ -10,6 +10,10 @@
     right: 25%;
   }
   &__content {
+    position: absolute;
+    width: 100%;
+    top: 30px;
+
     &--bottom {
       position: absolute;
       width: 100%;
