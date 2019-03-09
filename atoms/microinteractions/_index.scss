@@ -1,0 +1,13 @@
+.a-mi {
+  transition: transform 1s ease-in-out;
+  will-change: transform;
+  &--left {
+    transform: translateX(-100%);
+  }
+  &--right {
+    transform: translateX(100%);
+  }
+  &.is-visible, &.is-loaded {
+    transform: translateX(0);
+  }
+}

@@ -1,7 +1,9 @@
 @import "utils/thirdParty/normalize";
 @import "utils/medias/index";
+
 /** THEME & Branding**/
 @import "atoms/theme/index";
+
 /** ATOMS **/
 @import "atoms/spaces/padding";
 @import "atoms/spaces/margin";
@@ -17,9 +19,11 @@
 @import "atoms/spaces/separator";
 @import "atoms/borders/types";
 @import "atoms/separator/color";
+
 /** ANIMATION **/
 @import "atoms/animations/bell";
 @import "atoms/animations/bg";
+@import "atoms/microinteractions/index";
 
 body {
   font-size: $font-size-text;
