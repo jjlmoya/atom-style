@@ -1,0 +1,16 @@
+.wp-block-image {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 5px;
+  box-shadow: 0 2px 4px 0 var(--shadow-dark);
+  border-radius: 5px;
+  img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  figcaption {
+    margin-top: -25px;
+    color: $mono-color-0;
+    padding: 0 10px;
+  }
+}
