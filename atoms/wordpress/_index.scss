@@ -2,7 +2,7 @@
   max-width: 500px;
   margin: 40px auto;
   padding: 5px;
-  box-shadow: 0 2px 4px 0 var(--shadow-dark);
+  @extend .u-shadow--bottom;
   border-radius: 5px;
   img {
     width: 100%;

@@ -1,9 +1,6 @@
 .a-mi {
   transition: transform 1s ease-in-out;
   will-change: transform;
-  &--zoom {
-    transform: scale(0.2);
-  }
   &--left {
     transform: translateX(-100%);
   }
@@ -12,6 +9,8 @@
   }
   &.is-visible, &.is-loaded {
     transform: translateX(0);
-    transform: scale(1);
   }
 }
+
+@import 'zoom';
+@import 'beat';
