@@ -1,0 +1,14 @@
+.og-content-plain {
+  p {
+    padding: 5px 0;
+  }
+  a, a:visited {
+    color: $primary-color;
+  }
+  &--secondary {
+    @extend .a-bg;
+    a, a:visited {
+      color: $mono-color-0;
+    }
+  }
+}
