@@ -1,6 +1,6 @@
 .wp-block-image {
-  max-width: 500px;
-  margin: 40px auto;
+  max-width: 50%;
+  margin: 0 auto;
   padding: 5px;
   @extend .u-shadow--bottom;
   border-radius: 5px;
@@ -9,8 +9,7 @@
     border-radius: 5px;
   }
   figcaption {
-    margin-top: -25px;
-    color: $mono-color-0;
+    color: $primary-color;
     padding: 0 10px;
   }
 }
