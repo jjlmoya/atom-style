@@ -10,6 +10,12 @@
   }
   &--secondary {
     background-color: $secondary-color;
+    &--dark {
+      background-color: $secondary-color-dark;
+    }
+    &--light {
+      background-color: $secondary-color-light;
+    }
   }
   &--light {
     background-color: $primary-color-light;

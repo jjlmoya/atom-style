@@ -1,0 +1,31 @@
+$border-radius-value: 5px;
+.ml-visual-color {
+  &:first-child {
+    .ml-visual-color__rectangle {
+      border-top-left-radius: $border-radius-value;
+    }
+  }
+  &:last-child {
+    .ml-visual-color__rectangle {
+      border-top-right-radius: $border-radius-value;
+    }
+  }
+  &__rectangle{
+
+  }
+  &__rectangle {
+    height: 300px;
+  }
+  &__square {
+    position: relative;
+    height: 100px;
+  }
+  .a-color--replaced {
+    @extend .a-text--shadow;
+    position: absolute;
+    top: -30px;
+  }
+  &__text {
+    width: 100px;
+  }
+}

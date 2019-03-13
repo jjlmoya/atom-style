@@ -11,9 +11,11 @@
 @import "molecules/card/author";
 @import "molecules/box/index";
 @import "molecules/slider/arrow";
+@import "molecules/visual/color";
 /** ORGANISM  **/
 @import "organisms/headers/inline";
 @import "organisms/headers/mobile";
+@import "organisms/footer/classic";
 @import "organisms/banner/arrow";
 @import "organisms/banner/outside-circle";
 @import "organisms/banner/screen";
@@ -24,6 +26,7 @@
 @import "organisms/slider/product/curved";
 @import "organisms/title/brand";
 @import "organisms/content/plain";
+@import "organisms/visual/color";
 /** WORDPRESS **/
 @import "atoms/wordpress/index";
 

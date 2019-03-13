@@ -1,0 +1,21 @@
+.og-visual-colors {
+  &__image {
+    display: block;
+    img {
+      height: 75px;
+    }
+  }
+  &__badge {
+    margin-bottom: -35px;
+    z-index: 2;
+  }
+  &__container {
+    order:1;
+    max-width: 600px;
+  }
+  &__title {
+    order:2;
+    max-width: 600px;
+    border-radius: 0 0 5px 5px;
+  }
+}
