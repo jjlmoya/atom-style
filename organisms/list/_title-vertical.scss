@@ -11,7 +11,7 @@ $og-list-title-vertical-side-height: 60px;
   }
   &__container {
     margin-left: $og-list-title-vertical-side-height;
-    border-radius: 10px;
+    border-radius: 0 10px 10px 0;
     &__wrapper:last-child {
       hr {
         display: none;
@@ -24,7 +24,8 @@ $og-list-title-vertical-side-height: 60px;
       right: $og-list-title-vertical-side-height;
     }
     .og-list-title-vertical__container {
-      margin-left: 0;
+      border-radius: 10px 0 0 10px;
+      margin-left: 10px;
       margin-right: $og-list-title-vertical-side-height;
     }
   }
