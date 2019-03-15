@@ -10,7 +10,7 @@ $border-radius-value: 5px;
       border-top-right-radius: $border-radius-value;
     }
   }
-  &__rectangle{
+  &__rectangle {
 
   }
   &__rectangle {
@@ -27,5 +27,24 @@ $border-radius-value: 5px;
   }
   &__text {
     width: 100px;
+  }
+}
+
+@media only screen and (max-width: $media-size-m) {
+  .ml-visual-color {
+    &__rectangle {
+      height: 150px;
+    }
+    &__square {
+      position: relative;
+      height: 50px;
+    }
+    .a-color--replaced {
+      top: -25px;
+      font-size: 10px;
+    }
+    &__text {
+      width: 50px;
+    }
   }
 }

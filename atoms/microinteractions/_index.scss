@@ -3,12 +3,23 @@
   will-change: transform;
   &--left {
     transform: translateX(-100%);
+    &.is-loaded {
+      transform: translateX(0);
+    }
   }
   &--right {
     transform: translateX(100%);
+    &.is-loaded {
+      transform: translateX(0);
+    }
   }
-  &.is-visible, &.is-loaded {
-    transform: translateX(0);
+  &--temporal {
+    &--left {
+      transform: translateX(-100%);
+      &.is-visible {
+        transform: translateX(0);
+      }
+    }
   }
 }
 

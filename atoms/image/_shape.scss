@@ -1,22 +1,32 @@
 .a-image {
+  &--cover {
+    object-fit: cover;
+  }
   &--avatar {
     border-radius: 50%;
     width: 100px;
     height: 100px;
     object-fit: cover;
-    &--xl {
-      width: 150px;
-      height: 150px;
-    }
-    &--big {
-      width: 200px;
-      height: 200px;
-    }
+  }
+  &--m {
+    width: 100px;
+    height: 100px;
+  }
+  &--xl {
+    width: 150px;
+    height: 150px;
+  }
+  &--big {
+    width: 200px;
+    height: 200px;
   }
   &--thumbnail {
     border-radius: 5px;
   }
   &--cover {
     object-fit: cover;
+  }
+  &--rounded {
+    border-radius: 10px;
   }
 }
