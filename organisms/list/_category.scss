@@ -1,0 +1,42 @@
+.og-list-category {
+  &__title__text, &__row__picture {
+    min-width: 400px;
+  }
+
+  &__row__content {
+    flex-grow: 1;
+    max-width: 100%;
+  }
+  &__row__picture {
+    overflow: hidden;
+    position: relative;
+    img {
+      position: absolute;
+      height: 100%;
+    }
+  }
+  &__row {
+
+  }
+  &.is-reverse {
+    .og-list-category {
+      &__title {
+        justify-content: flex-end;
+      }
+      &__row__picture {
+        order: 1;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $media-size-m) {
+  .og-list-category {
+    &__title__text{
+      min-width: 150px;
+    }
+    &__row__picture {
+      display: none;
+    }
+  }
+}
