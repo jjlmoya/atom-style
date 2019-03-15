@@ -1,5 +1,9 @@
 .l-position {
   position: relative;
+  &--sticky {
+    position:fixed;
+    top:0;
+  }
   &--absolute {
     position: absolute;
     &--center {
