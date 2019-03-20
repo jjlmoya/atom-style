@@ -7,14 +7,20 @@
   }
   &__container {
     height: 200px;
+    picture {
+      height: 100%;
+    }
     .a-image {
+      height: 100%;
       object-fit: cover;
     }
   }
 }
 
 @media only screen and (max-width: $media-size-sm) {
-  &__container {
-    height: 150px;
+  .ml-card-sample {
+    &__container {
+      height: 150px;
+    }
   }
 }
