@@ -4,6 +4,7 @@
 @import "molecules/block/articles/minimalist";
 @import "molecules/block/articles/extract";
 @import "molecules/block/articles/slim";
+@import "molecules/block/articles/condensed";
 @import "molecules/card/testimony";
 @import "molecules/card/author";
 @import "molecules/card/articles/avatar";
@@ -13,7 +14,6 @@
 @import "molecules/slider/arrow";
 @import "molecules/visual/color";
 @import "molecules/block/articles/rectangle";
-
 /** ORGANISM  **/
 @import "organisms/headers/inline";
 @import "organisms/headers/mobile";
@@ -31,7 +31,7 @@
 @import "organisms/visual/color";
 @import "organisms/list/title-vertical";
 @import "organisms/list/category";
-
+@import "organisms/popup/exit-intent";
 /** WORDPRESS **/
 @import "atoms/wordpress/index";
 

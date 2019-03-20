@@ -4,6 +4,9 @@
     &--light {
       background-image: $gradient-contrast;
     }
+    &--mono-light {
+      background-image: $gradient-mono-light;
+    }
   }
   &--dark {
     background-color: $primary-color-dark;

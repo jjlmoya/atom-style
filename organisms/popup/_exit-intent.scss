@@ -1,0 +1,17 @@
+.og-popup-exit-intent {
+  width: 100vw;
+  height: 100vh;
+  background-color: $shadow-dark;
+  &__content {
+    width: 50vw;
+    height: 75vh;
+    padding-top: -10vh;
+  }
+  &__close {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+
+  }
+}
+
