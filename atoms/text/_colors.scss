@@ -25,6 +25,9 @@
   &--link {
     cursor: pointer;
   }
+  &--success {
+    color: $success-color;
+  }
   &--shadow {
     background: $gradient-contrast;
     color: transparent;
