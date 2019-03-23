@@ -15,6 +15,9 @@
   &--light {
     border-color: $primary-color-light;
   }
+  &--secondary {
+    border-color: $secondary-color;
+  }
   &--rounded {
     border-radius: 50%;
   }
