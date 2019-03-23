@@ -1,16 +1,6 @@
-@function hexToRGBString($hexColor) {
-  // 0.999999 val in alpha actually compiles to 1.0
-  $rgbaVal: inspect(rgba($hexColor, 0.9999999));
-
-  // slice substring between 'rgba(' and '1.0)'
-  @return str-slice($rgbaVal, 6, str-length($rgbaVal)-6);
-}
-
 .u-shadow {
-
   &--bottom {
     box-shadow: 0 2px 4px 0 $shadow-dark;
-
   }
   &--top {
     box-shadow: 0 -2px 4px 0 $shadow-dark;
