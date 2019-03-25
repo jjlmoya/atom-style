@@ -18,6 +18,10 @@
         margin: auto;
       }
     }
+    &--right-corner {
+      top: 15px;
+      right: 15px;
+    }
   }
   &--fixed {
     position: fixed;
