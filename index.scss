@@ -1,7 +1,6 @@
 @import "base";
 @import "commons";
 /** MOLECULES  **/
-
 @import "molecules/block/articles/minimalist";
 @import "molecules/block/articles/extract";
 @import "molecules/block/articles/slim";
@@ -15,7 +14,7 @@
 @import "molecules/slider/arrow";
 @import "molecules/visual/color";
 @import "molecules/block/articles/rectangle";
-
+@import "molecules/share/deploy";
 @import "organisms/headers/inline";
 @import "organisms/headers/mobile";
 @import "organisms/footer/classic";
@@ -33,7 +32,6 @@
 @import "organisms/list/title-vertical";
 @import "organisms/list/category";
 @import "organisms/popup/exit-intent";
-
 @import "atoms/wordpress/index";
 
 
