@@ -18,9 +18,21 @@
         margin: auto;
       }
     }
-    &--right-corner {
-      top: 15px;
-      right: 15px;
+    &--top-right {
+      right: 10px;
+      top: 10px;
+    }
+    &--top-left {
+      left: 10px;
+      top: 10px;
+    }
+    &--bottom-left {
+      left: 15px;
+      bottom: 15px;
+    }
+    &--bottom-right {
+      right: 10px;
+      bottom: 10px;
     }
   }
   &--fixed {
@@ -36,4 +48,5 @@
     position: sticky;
     top: 0;
   }
+
 }

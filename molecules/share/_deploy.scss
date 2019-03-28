@@ -1,16 +1,20 @@
 .ml-share-deploy {
   position: absolute;
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-  cursor: pointer;
-  &__share {
-    &__button {
-      svg {
-        width: 25px;
-        height: 25px;
+  &__svg {
+    svg {
+      width: 25px;
+      height: 25px;
+      path {
+        fill: $primary-color;
+      }
+      &:hover {
+        path {
+          fill: $primary-color-dark;
+        }
       }
     }
+  }
+  &__share {
     &:hover, .ml-share-deploy__navigation:hover {
       .ml-share-deploy__navigation {
         @for $i from 1 through 3 {
@@ -25,17 +29,7 @@
     }
   }
   &__navigation {
-    list-style-type: none;
-    padding: 0;
-    position: absolute;
-    width: 100px;
-    height: 20px;
-    top: 0;
     &__network {
-      svg {
-        width: 25px;
-        height: 25px;
-      }
       transition: all ease-in-out 0.5s;
       position: absolute;
       width: 25px;
@@ -47,21 +41,5 @@
       &:hover {
       }
     }
-  }
-  &--top-right {
-    right: 10px;
-    top: 10px;
-  }
-  &--top-left {
-    left: 10px;
-    top: 10px;
-  }
-  &--bottom-left {
-    left: 15px;
-    bottom: 15px;
-  }
-  &--bottom-right {
-    right: 10px;
-    bottom: 10px;
   }
 }

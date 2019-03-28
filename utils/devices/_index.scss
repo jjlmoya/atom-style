@@ -1,12 +1,16 @@
 .u-touch {
   cursor: pointer;
 }
+
 .u {
   &-mobile {
     display: none;
   }
 }
 
+.u-pointer {
+  cursor: pointer;
+}
 
 @media only screen and (max-width: $media-size-m) {
   .u {
