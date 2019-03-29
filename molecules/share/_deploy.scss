@@ -1,5 +1,55 @@
 .ml-share-deploy {
   position: absolute;
+  &--left {
+    .ml-share-deploy__share {
+      &:hover, .ml-share-deploy__navigation:hover {
+        .ml-share-deploy__navigation {
+          @for $i from 1 through 3 {
+            &__network:nth-child(#{$i}) {
+              opacity: 1;
+              z-index: 1;
+              left: #{$i*-30}px;
+              transition-delay: #{$i*0.1}s;
+            }
+          }
+        }
+      }
+    }
+  }
+  &--bottom {
+    .ml-share-deploy__share {
+      &:hover, .ml-share-deploy__navigation:hover {
+        .ml-share-deploy__navigation {
+          @for $i from 1 through 3 {
+            &__network:nth-child(#{$i}) {
+              opacity: 1;
+              z-index: 1;
+              top: #{$i*30}px;
+              left: 0;
+              transition-delay: #{$i*0.1}s;
+            }
+          }
+        }
+      }
+    }
+  }
+  &--top {
+    .ml-share-deploy__share {
+      &:hover, .ml-share-deploy__navigation:hover {
+        .ml-share-deploy__navigation {
+          @for $i from 1 through 3 {
+            &__network:nth-child(#{$i}) {
+              opacity: 1;
+              z-index: 1;
+              top: #{$i*-30}px;
+              left: 0;
+              transition-delay: #{$i*0.1}s;
+            }
+          }
+        }
+      }
+    }
+  }
   &__svg {
     svg {
       width: 25px;
