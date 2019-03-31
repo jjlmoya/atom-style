@@ -1,73 +1,11 @@
+$share-deploy-height: 22;
 .ml-share-deploy {
   position: absolute;
-  &__svg {
-    svg {
-      width: 25px;
-      height: 25px;
-      path {
-        fill: $primary-color;
-      }
-      &:hover {
-        path {
-          fill: $secondary-color;
-        }
-      }
-    }
-  }
-  &--secondary {
-    .ml-share-deploy {
-      &__svg {
-        svg {
-          path {
-            fill: $secondary-color;
-          }
-          &:hover {
-            path {
-              fill: $secondary-color-dark;
-            }
-          }
-        }
-      }
-    }
-  }
-  &--white {
-    .ml-share-deploy {
-      &__svg {
-        svg {
-          path {
-            fill: $mono-color-0;
-          }
-          &:hover {
-            path {
-              fill: $mono-color-1;
-            }
-          }
-        }
-      }
-    }
-  }
-  &__share {
-    height: 100px;
-    width: 100px;
-    &:hover, .ml-share-deploy__navigation:hover {
-      .ml-share-deploy__navigation {
-        @for $i from 1 through 3 {
-          &__network:nth-child(#{$i}) {
-            opacity: 1;
-            z-index: 1;
-            left: #{$i*30}px;
-            transition-delay: #{$i*0.1}s;
-          }
-        }
-      }
-    }
-  }
+  width: #{$share-deploy-height}px;
   &__navigation {
     &__network {
       transition: all ease-in-out 0.5s;
       position: absolute;
-      width: 25px;
-      height: 25px;
       top: 0;
       left: 0;
       z-index: -1;
@@ -76,7 +14,20 @@
       }
     }
   }
-
+  &__share {
+    &:hover, .ml-share-deploy__navigation:hover {
+      .ml-share-deploy__navigation {
+        @for $i from 1 through 3 {
+          &__network:nth-child(#{$i}) {
+            opacity: 1;
+            z-index: 1;
+            left: #{$i*$share-deploy-height}px;
+            transition-delay: #{$i*0.1}s;
+          }
+        }
+      }
+    }
+  }
   &--left {
     .ml-share-deploy__share {
       &:hover, .ml-share-deploy__navigation:hover {
@@ -85,7 +36,7 @@
             &__network:nth-child(#{$i}) {
               opacity: 1;
               z-index: 1;
-              left: #{$i*-30}px;
+              left: #{$i*-$share-deploy-height}px;
               transition-delay: #{$i*0.1}s;
             }
           }
@@ -101,7 +52,7 @@
             &__network:nth-child(#{$i}) {
               opacity: 1;
               z-index: 1;
-              top: #{$i*30}px;
+              top: #{$i*$share-deploy-height}px;
               left: 0;
               transition-delay: #{$i*0.1}s;
             }
@@ -118,13 +69,23 @@
             &__network:nth-child(#{$i}) {
               opacity: 1;
               z-index: 1;
-              top: #{$i*-30}px;
+              top: #{$i*-$share-deploy-height}px;
               left: 0;
               transition-delay: #{$i*0.1}s;
             }
           }
         }
       }
+    }
+  }
+  &--left, &--right {
+    .ml-share-deploy__share__area {
+      width: 50px;
+    }
+  }
+  &--top, &--bottom {
+    .ml-share-deploy__share__area {
+      height: 50px;
     }
   }
 }
