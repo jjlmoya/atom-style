@@ -18,6 +18,10 @@ a.a-button, .a-button {
         border: 1px double $mono-color-0;
       }
     }
+    &:hover {
+      background-color: transparent;
+      border-width: 3px;
+    }
   }
   &--slider {
     width: 10px;
