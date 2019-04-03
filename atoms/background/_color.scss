@@ -1,13 +1,7 @@
+
+
 .a-bg {
   background-color: $primary-color;
-  &--gradient {
-    &--light {
-      background-image: $gradient-contrast;
-    }
-    &--mono-light {
-      background-image: $gradient-mono-light;
-    }
-  }
   &--dark {
     background-color: $primary-color-dark;
   }
@@ -23,48 +17,17 @@
   &--light {
     background-color: $primary-color-light;
   }
-  &--mono-0 {
-    background-color: $mono-color-0;
+  @each $class, $value in $monoColors {
+    &--mono-#{$class} {
+      background-color: $value;
+    }
   }
-  &--mono-1 {
-    background-color: $mono-color-1;
-  }
-  &--mono-2 {
-    background-color: $mono-color-2;
-  }
-  &--mono-3 {
-    background-color: $mono-color-3;
-  }
-  &--mono-4 {
-    background-color: $mono-color-4;
-  }
-  &--mono-8 {
-    background-color: $mono-color-8;
-  }
-  &--mono-9 {
-    background-color: $mono-color-9;
-  }
+
   &--picture {
     background-size: cover;
   }
   &--grayscale {
     filter: grayscale(100%);
-  }
-  &--image {
-    position: relative;
-    background-color: rgba($mono-color-9, 0.6);
-    &::after {
-      content: "";
-      -webkit-background-size: cover;
-      background-size: cover;
-      background-position: center;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      position: absolute;
-      z-index: -1;
-    }
   }
 }
 

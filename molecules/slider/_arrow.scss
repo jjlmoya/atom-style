@@ -1,8 +1,11 @@
 .ml-arrow {
-  background-color: rgba($mono-color-0, 0.3);
-  color: $secondary-color-text;
+  position: absolute;
   &--right {
+    right: 0;
     transform: rotate(180deg);
+  }
+  &--left {
+    left: 0;
   }
   &--full {
     height: 100%;

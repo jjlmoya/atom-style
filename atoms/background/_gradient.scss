@@ -1,0 +1,8 @@
+.a-bg--gradient {
+  &--light {
+    background-image: $gradient-contrast;
+  }
+  &--mono-light {
+    background-image: $gradient-mono-light;
+  }
+}
