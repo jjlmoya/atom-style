@@ -1,0 +1,11 @@
+.og-header-double {
+  &--logo {
+    height: 65px;
+  }
+  &--logo picture {
+    height: 50px;
+    img {
+      height: 100%;
+    }
+  }
+}
