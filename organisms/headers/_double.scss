@@ -1,11 +1,14 @@
 .og-header-double {
-  &--logo {
-    height: 65px;
+  &--logo, &--logo img {
+    height: 60px;
   }
-  &--logo picture {
-    height: 50px;
-    img {
-      height: 100%;
+  &--navigation {
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    &--link {
+      min-width: 75px;
     }
   }
 }
