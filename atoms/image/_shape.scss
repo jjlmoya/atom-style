@@ -2,6 +2,9 @@
   &--cover {
     object-fit: cover;
   }
+  &--contain {
+    object-fit: contain;
+  }
   &--background {
     top: 0;
     bottom: 0;
@@ -39,6 +42,9 @@
   }
   &--rounded {
     border-radius: 10px;
+  }
+  &--poster {
+    height: 70vh;
   }
 }
 

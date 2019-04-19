@@ -1,18 +1,29 @@
 .ml-card-sample {
   &__title {
-
+    background-color: $primary-color-dark;
   }
   &--small {
     max-width: 200px;
   }
   &__container {
+    background-color: $primary-color;
     height: 200px;
-    picture {
+    picture  {
       height: 100%;
     }
     .a-image {
       height: 100%;
       object-fit: cover;
+    }
+  }
+  &--secondary {
+    .ml-card-sample {
+      &__title {
+        background-color: $secondary-color-dark;
+      }
+      &__container {
+        background-color: $secondary-color;
+      }
     }
   }
 }
