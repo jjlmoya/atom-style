@@ -10,6 +10,7 @@
 @import "atoms/text/colors";
 @import "atoms/text/modifier";
 @import "atoms/text/icons";
+@import "atoms/price/index";
 @import "atoms/button/color";
 @import "atoms/button/sizes";
 @import "atoms/button/shape";
@@ -80,6 +81,7 @@ body {
 @import "organisms/slider/product/curved";
 @import "organisms/title/brand";
 @import "organisms/content/plain";
+@import "organisms/content/poster-detail";
 @import "organisms/visual/color";
 @import "organisms/list/title-vertical";
 @import "organisms/list/category";
