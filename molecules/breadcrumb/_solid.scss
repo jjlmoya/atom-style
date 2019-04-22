@@ -1,0 +1,26 @@
+$ml-breadcrumb-solid-height: 20px;
+.ml-breadcrumb-solid {
+  &__element {
+    list-style: none;
+    border-right: 3px solid $mono-color-0;
+    transform: skewX(-25deg);
+    line-height: $ml-breadcrumb-solid-height;
+    &:first-child {
+      display: none;
+    }
+    &:nth-child(2) {
+      border-left: 3px solid #fff;
+    }
+    &:last-child {
+      border-right: none;
+    }
+    &__content {
+      display: block;
+      transform: skewX(25deg);
+    }
+  }
+  &__element:last-child {
+    font-weight: bold;
+    pointer-events: none;
+  }
+}

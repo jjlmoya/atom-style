@@ -33,6 +33,24 @@
     }
   }
 
+  &--left {
+    padding-left: 10px;
+    @each $class, $value in $spaceMap {
+      &-#{$class} {
+        padding-left: $value;
+      }
+    }
+  }
+
+  &--right {
+    padding-right: 10px;
+    @each $class, $value in $spaceMap {
+      &-#{$class} {
+        padding-right: $value;
+      }
+    }
+  }
+
   &--y {
     padding: 10px 0;
     @each $class, $value in $spaceMap {
