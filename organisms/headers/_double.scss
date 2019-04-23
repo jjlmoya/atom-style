@@ -11,4 +11,10 @@
       min-width: 75px;
     }
   }
+  &--overflow {
+    .og-header-double--logo img {
+      height: 80px;
+      margin-top: 10px;
+    }
+  }
 }
