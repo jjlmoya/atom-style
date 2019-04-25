@@ -1,0 +1,11 @@
+.l-grid-column {
+  display: grid;
+  grid-template-columns: 24px 1fr minmax(auto, 1200px) 1fr 24px;
+  & > * {
+    grid-column: 3/4;
+  }
+  &--full {
+    grid-column: 1/-1;
+  }
+}
+

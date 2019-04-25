@@ -5,4 +5,11 @@
   &--mono-light {
     background-image: $gradient-mono-light;
   }
+  &--transparent {
+    @each $class, $value in $gradient-brand-transparent {
+      &-#{$class} {
+        background-image: $value;
+      }
+    }
+  }
 }

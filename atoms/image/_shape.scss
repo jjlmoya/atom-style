@@ -5,6 +5,9 @@
   &--contain {
     object-fit: contain;
   }
+  &--full {
+    width: 100%;
+  }
   &--background {
     top: 0;
     bottom: 0;

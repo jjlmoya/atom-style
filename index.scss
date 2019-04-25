@@ -44,6 +44,7 @@ body {
 @import "layout/basic/flex";
 @import "layout/basic/columns";
 @import "layout/basic/positions";
+@import "layout/grid/column";
 /** UTILS  **/
 @import "utils/layers/index";
 @import "utils/devices/index";
@@ -66,6 +67,7 @@ body {
 @import "molecules/block/articles/rectangle";
 @import "molecules/share/deploy";
 @import "molecules/breadcrumb/solid";
+@import "molecules/product/float";
 
 
 @import "organisms/headers/inline";
