@@ -1,6 +1,6 @@
 .l-grid-column {
   display: grid;
-  grid-template-columns: 24px 1fr minmax(auto, 1200px) 1fr 24px;
+  grid-template-columns: 24px 1fr minmax(auto, 900px) 1fr 24px;
   & > * {
     grid-column: 3/4;
   }

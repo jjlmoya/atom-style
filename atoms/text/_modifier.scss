@@ -28,6 +28,9 @@
   &--lowercase {
     text-transform: lowercase;
   }
+  &--stroke {
+    text-decoration: line-through;
+  }
 }
 
 @media only screen and (max-width: $media-size-m) {
