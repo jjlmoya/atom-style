@@ -11,4 +11,13 @@
       background-color: $secondary-color-dark;
     }
   }
+  &--mono-0 {
+    color: $primary-color;
+    background-color: $mono-color-0;
+    border: 1px solid $mono-color-0;
+    &:hover {
+      border-color: $primary-color;
+      background-color: $mono-color-0;
+    }
+  }
 }
