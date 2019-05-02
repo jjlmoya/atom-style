@@ -2,7 +2,8 @@
   overflow: hidden;
   &__content {
     display: flex;
-    overflow-x: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
     scroll-snap-points-x: repeat(100vw);
