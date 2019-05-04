@@ -34,6 +34,7 @@
 @import "atoms/microinteractions/bounce";
 @import "atoms/microinteractions/color";
 @import "atoms/microinteractions/pulse";
+@import "atoms/microinteractions/float";
 
 body {
   font-size: $font-size-text;
@@ -91,6 +92,9 @@ body {
 @import "organisms/list/title-vertical";
 @import "organisms/list/category";
 @import "organisms/popup/exit-intent";
+@import "organisms/block/bubble-action";
+
+
 @import "atoms/wordpress/index";
 
 
