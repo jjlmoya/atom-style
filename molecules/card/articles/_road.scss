@@ -1,0 +1,14 @@
+.ml-articles-road {
+  width: 300px;
+  &__image {
+    overflow: hidden;
+    height: 300px;
+    filter:grayscale(100%);
+  }
+  &:hover {
+    box-shadow: inset 0px -10px 0px $primary-color, 0px -10px 0px $primary-color ;
+    .ml-articles-road__image {
+      filter:none;
+    }
+  }
+}
