@@ -1,0 +1,21 @@
+.ml-card-articles-quark {
+  width: 200px;
+  border-radius: 0 0 5px 5px;
+  &__image {
+    overflow: hidden;
+    height: 200px;
+    width: 200px;
+    img {
+      border-radius: 5px 5px 0 0;
+    }
+  }
+  &__bubble {
+    width: 0;
+    border-left: 1.5em solid transparent;
+    border-right: 1.5em solid transparent;
+    border-top: 1em solid $primary-color;
+  }
+  &__content {
+
+  }
+}
