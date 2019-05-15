@@ -1,0 +1,11 @@
+
+
+$ml-theme-selector-size: 10px;
+.ml-theme-selector {
+  position: absolute;
+  bottom:-#{$ml-theme-selector-size};
+  &__item {
+    width: $ml-theme-selector-size;
+    height: $ml-theme-selector-size;
+  }
+}
