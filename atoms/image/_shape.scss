@@ -8,6 +8,11 @@
   &--full {
     width: 100%;
   }
+  &--exposure {
+    img:first-child {
+      mix-blend-mode: lighten;
+    }
+  }
   &--background {
     top: 0;
     bottom: 0;
