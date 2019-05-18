@@ -1,0 +1,12 @@
+.ml-article-semicircle {
+  overflow: hidden;
+  width: 300px;
+  &__content {
+    height: 200px;
+    width: 200px;
+  }
+  &__image img {
+    height: 200px;
+    width: 200px;
+  }
+}
