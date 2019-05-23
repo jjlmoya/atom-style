@@ -4,6 +4,12 @@
   &:hover {
     background-color: $secondary-color-light;
   }
+  &--gradient {
+    background: -webkit-linear-gradient($primary-color, $primary-color-dark);
+    &.a-button--secondary {
+      background: -webkit-linear-gradient($secondary-color, $secondary-color-dark);
+    }
+  }
   &--secondary {
     color: $secondary-color-text;
     background-color: $secondary-color;
