@@ -1,3 +1,20 @@
+// Sizes
+//
+// Markup:
+// <button class="a-button a-button--primary {{modifier_class}}">Button</button>
+// <button class="a-button a-button--secondary {{modifier_class}}">Button</button>
+//
+// .a-button--xs - XS
+// .a-button--s - S
+// .a-button--m - M
+// .a-button--xl - XL
+// .a-button--fix - Fix
+// .a-button--fix--xs - Fix XS
+// .a-button--fix--s - Fix S
+// .a-button--fix--m - Fix M
+//
+// Styleguide Atoms.Button.Sizes
+
 a.a-button, .a-button {
   font-size: $font-size-xs;
   &--xs {

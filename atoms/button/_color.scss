@@ -1,3 +1,18 @@
+// Colors
+//
+// Markup:
+// <button class="a-button a-button--m {{modifier_class}}">Button Element</button>
+// <button class="a-button a-button--s {{modifier_class}}">Button Element</button>
+// <button class="a-button a-button--xs {{modifier_class}}">Button Element</button>
+//
+// .a-button--secondary - Secondary Button
+// .a-button--gradient - Gradient Button
+// .a-button--gradient--secondary - Gradient Button
+// .a-button--mono-0 - Gradient Button
+// .button--large - A large button.
+//
+// Styleguide Atoms.Button.Colors
+
 .a-button {
   color: $primary-color-text;
   background-color: $primary-color;

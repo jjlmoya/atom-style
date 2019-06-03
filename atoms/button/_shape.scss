@@ -1,3 +1,17 @@
+// Shapes
+//
+// Markup:
+// <button class="a-button a-button--primary a-button--m {{modifier_class}}">Button Element</button>
+// <button class="a-button a-button--secondary a-button--m {{modifier_class}}">Button Element</button>
+//
+// .a-button--fit - Fit
+// .a-button--float - Float
+// .a-button--rounded - Rounded
+// .a-button--linear - Linear
+// .a-button--slider - Slider Button
+//
+// Styleguide Atoms.Button.Shapes
+
 a.a-button, .a-button {
   cursor: pointer;
   &--fit {

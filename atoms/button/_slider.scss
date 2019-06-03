@@ -1,5 +1,15 @@
+// Slider
+//
+// Markup:
+// <button class="a-button a-button--primary a-button--slider"></button>
+// <button class="a-button a-button--secondary a-button--slider "></button>
+//
+// :hover - Hover
+//
+// Styleguide Atoms.Button.Slider
+
 .a-button--slider {
-   &.is-active {
-     background-color: $secondary-color;
-   }
- }
+  &.is-active {
+    background-color: $secondary-color;
+  }
+}
