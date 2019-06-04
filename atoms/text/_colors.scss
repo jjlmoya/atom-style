@@ -16,6 +16,7 @@
       color: $primary-color-light;
     }
   }
+
   &--brand--secondary {
     color: $secondary-color;
   }
@@ -27,6 +28,9 @@
   }
   &--success {
     color: $success-color;
+  }
+  &--blur {
+    text-shadow: 0px 0px 4px $primary-color-text;
   }
   &--shadow {
     background: $gradient-contrast;
