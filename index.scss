@@ -1,4 +1,3 @@
-
 @import "base";
 @import "utils/thirdParty/normalize";
 @import "utils/medias/index";
@@ -13,11 +12,7 @@
 @import "atoms/text/icons";
 @import "atoms/text/titles";
 @import "atoms/price/index";
-
-
 @import "atoms/button/index";
-
-
 @import "atoms/image/shape";
 @import "atoms/background/color";
 @import "atoms/background/shape";
@@ -29,9 +24,11 @@
 @import "atoms/icon/svg";
 /** ASSETS **/
 @import "atoms/media/cursor";
-/** ANIMATION **/
+
+/** ANIMATIONS **/
 @import "atoms/animations/bell";
 @import "atoms/animations/bg";
+
 @import "atoms/microinteractions/index";
 @import "atoms/microinteractions/bounce";
 @import "atoms/microinteractions/color";
@@ -61,7 +58,10 @@ body {
 @import "molecules/block/articles/slim";
 @import "molecules/block/articles/condensed";
 @import "molecules/block/articles/semicircle";
+@import "molecules/block/articles/image";
+
 @import "molecules/block/theme-selector";
+
 @import "molecules/card/testimony";
 @import "molecules/card/author";
 @import "molecules/card/articles/avatar";
@@ -69,6 +69,7 @@ body {
 @import "molecules/card/articles/road";
 @import "molecules/card/sample";
 @import "molecules/card/author";
+
 @import "molecules/box/index";
 @import "molecules/slider/arrow";
 @import "molecules/visual/color";
@@ -78,29 +79,38 @@ body {
 @import "molecules/product/float";
 @import "molecules/message/demand";
 
-
 @import "organisms/headers/inline";
 @import "organisms/headers/mobile";
 @import "organisms/headers/double";
+
 @import "organisms/footer/classic";
+
 @import "organisms/banner/arrow";
 @import "organisms/banner/outside-circle";
 @import "organisms/banner/screen";
 @import "organisms/banner/float";
+
+/** ORGANISMS  **/
 @import "organisms/slider/slider";
 @import "organisms/slider/simple";
 @import "organisms/slider/articles";
 @import "organisms/slider/product/curved";
+
 @import "organisms/title/brand";
+
 @import "organisms/content/plain";
 @import "organisms/content/poster-detail";
+
 @import "organisms/visual/color";
+
 @import "organisms/list/title-vertical";
 @import "organisms/list/category";
+
 @import "organisms/popup/exit-intent";
+
 @import "organisms/block/bubble-action";
 @import "organisms/block/cards-background";
-
+@import "organisms/block/articles/image";
 
 @import "atoms/wordpress/index";
 
