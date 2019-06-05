@@ -1,17 +1,44 @@
+// Mobile
+//
+// Markup:
+//<header class="og-header--mobile l-grid-column--full l-position l-flex l-flex--justify-center bs_theme {{modifier_class}}">
+//    <picture class=" a-pad-0">
+//        <img class="a-image " src="../../images/bonseo/logo.png">
+//    </picture>
+//    <div class="og-header--mobile__burger og-header--mobile__burger--right l-position--absolute">
+//        <div class="og-header--mobile__burger__icon a-text a-text--s a-icon a-icon--burger zoom--slow">
+//        </div>
+//    </div>
+//</header>
+//
+// .og-header--mobile--brand - Brand Color
+//
+// Styleguide Organisms.Header.Mobile
+
 .og-header--mobile {
   height: 30px;
   background-color: $mono-color-0;
   &--brand {
     background-color: $primary-color;
+    .og-header--mobile {
+      &__burger {
+        &__icon {
+          color: $secondary-color-text;
+        }
+      }
+    }
   }
   .a-image {
     height: 30px;
   }
   &__burger {
-    top: 0;
+    top: 2px;
+    &__icon {
+      color: $primary-color-text;
+    }
     &--right {
       padding: 5px;
-      right: 0;
+      right: 10px;
     }
     &--left {
       padding: 5px;

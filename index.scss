@@ -13,6 +13,7 @@
 @import "atoms/text/titles";
 @import "atoms/price/index";
 @import "atoms/button/index";
+//DOC-OK
 @import "atoms/image/shape";
 @import "atoms/background/color";
 @import "atoms/background/shape";
@@ -24,11 +25,9 @@
 @import "atoms/icon/svg";
 /** ASSETS **/
 @import "atoms/media/cursor";
-
 /** ANIMATIONS **/
 @import "atoms/animations/bell";
 @import "atoms/animations/bg";
-
 @import "atoms/microinteractions/index";
 @import "atoms/microinteractions/bounce";
 @import "atoms/microinteractions/color";
@@ -79,11 +78,11 @@ body {
 @import "molecules/product/float";
 @import "molecules/message/demand";
 
-@import "organisms/headers/inline";
-@import "organisms/headers/mobile";
-@import "organisms/headers/double";
+@import "organisms/headers/inline"; //DOC-OK
+@import "organisms/headers/mobile"; //DOC-OK
+@import "organisms/headers/double"; //DOC-OK
 
-@import "organisms/footer/classic";
+@import "organisms/footer/classic"; //DOC-OK
 
 @import "organisms/banner/arrow";
 @import "organisms/banner/outside-circle";
@@ -113,12 +112,3 @@ body {
 @import "organisms/block/articles/image";
 
 @import "atoms/wordpress/index";
-
-
-
-
-
-
-
-
-
