@@ -64,8 +64,8 @@ body {
 @import "molecules/card/testimony";
 @import "molecules/card/author";
 @import "molecules/card/articles/avatar";
-@import "molecules/card/articles/quark";
-@import "molecules/card/articles/road";
+@import "molecules/card/articles/quark"; //DOC-OK
+@import "molecules/card/articles/road"; //gitDOC-OK
 @import "molecules/card/sample";
 @import "molecules/card/author";
 
@@ -102,15 +102,17 @@ body {
 @import "organisms/content/plain"; //DOC-OK
 @import "organisms/content/poster-detail"; //DOC-OK
 
-@import "organisms/visual/color";
+@import "organisms/visual/color"; //DOC-OK
 
-@import "organisms/list/title-vertical";
-@import "organisms/list/category";
+@import "organisms/list/title-vertical"; //DOC-OK
+@import "organisms/list/category"; //DOC-OK
 
 @import "organisms/popup/exit-intent";
 
-@import "organisms/block/bubble-action";
-@import "organisms/block/cards-background";
+@import "organisms/block/bubble-action"; //DOC-OK
+@import "organisms/block/cards-background"; //DOC-OK
+@import "organisms/block/road"; //DOC-OK
+@import "organisms/block/quark"; //DOC-OK
 @import "organisms/block/articles/image";
 
 @import "atoms/wordpress/index";
