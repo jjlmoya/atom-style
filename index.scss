@@ -78,24 +78,26 @@ body {
 @import "molecules/product/float";
 @import "molecules/message/demand";
 
+/** ORGANISMS  **/
 @import "organisms/headers/inline"; //DOC-OK
 @import "organisms/headers/mobile"; //DOC-OK
 @import "organisms/headers/double"; //DOC-OK
 
 @import "organisms/footer/classic"; //DOC-OK
 
-@import "organisms/banner/arrow";
-@import "organisms/banner/outside-circle";
-@import "organisms/banner/screen";
-@import "organisms/banner/float";
+@import "organisms/banner/arrow"; //DOC-OK
+@import "organisms/banner/basic"; //DOC-OK
+@import "organisms/banner/data"; //DOC-OK
+@import "organisms/banner/float"; //DOC-OK
+@import "organisms/banner/outside-circle"; //DOC-OK
+@import "organisms/banner/screen"; //DOC-OK
 
-/** ORGANISMS  **/
-@import "organisms/slider/slider";
-@import "organisms/slider/simple";
-@import "organisms/slider/articles";
-@import "organisms/slider/product/curved";
+@import "organisms/slider/slider"; //DOC-OK
+@import "organisms/slider/simple"; //DOC-OK
+@import "organisms/slider/articles"; //DOC-OK
+@import "organisms/slider/product/curved"; //DOC-OK
 
-@import "organisms/title/brand";
+@import "organisms/title/brand"; //DOC-OK
 
 @import "organisms/content/plain";
 @import "organisms/content/poster-detail";
