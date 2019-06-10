@@ -1,0 +1,27 @@
+.a-border--rainbow {
+  position: relative;
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    z-index: -1;
+    opacity: 0;
+    transform: skew(2deg, 2deg);
+  }
+
+
+  &:before {
+    @include a-animation--fade(3s, 0s);
+    background: $secondary-color;
+    background: linear-gradient(to right, $primary-color, $primary-color-dark);
+  }
+
+  &:after {
+    @include a-animation--fade(4s, 2s);
+    background: $primary-color-dark;
+    background: linear-gradient(to right, $secondary-color-light, $secondary-color-dark);
+  }
+}

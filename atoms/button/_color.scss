@@ -14,7 +14,7 @@
 // Styleguide Atoms.Button.Colors
 
 .a-button {
-  color: $primary-color-text;
+  color: $secondary-color-text;
   background-color: $primary-color;
   &:hover {
     background-color: $secondary-color-light;
@@ -26,7 +26,6 @@
     }
   }
   &--secondary {
-    color: $secondary-color-text;
     background-color: $secondary-color;
     &:hover {
       background-color: $secondary-color-dark;

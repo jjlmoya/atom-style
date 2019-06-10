@@ -14,6 +14,10 @@
 @import "atoms/price/index";
 @import "atoms/button/index";
 //DOC-OK
+@import "atoms/animations/bell";
+@import "atoms/animations/bg";
+@import "atoms/animations/fade";
+
 @import "atoms/image/shape";
 @import "atoms/background/color";
 @import "atoms/background/shape";
@@ -21,13 +25,15 @@
 @import "atoms/spaces/separator";
 @import "atoms/borders/types";
 @import "atoms/borders/position";
+@import "atoms/borders/rainbow";
 @import "atoms/separator/color";
 @import "atoms/icon/svg";
 /** ASSETS **/
 @import "atoms/media/cursor";
 /** ANIMATIONS **/
-@import "atoms/animations/bell";
-@import "atoms/animations/bg";
+
+
+
 @import "atoms/microinteractions/index";
 @import "atoms/microinteractions/bounce";
 @import "atoms/microinteractions/color";
@@ -52,6 +58,8 @@ body {
 @import "utils/display/index";
 @import "utils/shadow/index";
 /** MOLECULES  **/
+
+@import "molecules/block/articles/rainbow";
 @import "molecules/block/articles/minimalist";
 @import "molecules/block/articles/extract";
 @import "molecules/block/articles/slim";
@@ -114,5 +122,6 @@ body {
 @import "organisms/block/road"; //DOC-OK
 @import "organisms/block/quark"; //DOC-OK
 @import "organisms/block/articles/image";
+@import "organisms/block/articles/rainbow";
 
 @import "atoms/wordpress/index";

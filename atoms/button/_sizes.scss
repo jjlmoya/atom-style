@@ -17,21 +17,27 @@
 
 a.a-button, .a-button {
   font-size: $font-size-xs;
+  margin: 0 auto;
   &--xs {
     padding: 0 10px;
     font-size: $font-size-xs;
+    max-width: 50px;
+
   }
   &--s {
     padding: 5px 15px;
     font-size: $font-size-s;
+    max-width: 100px;
   }
   &--m {
     padding: 5px 20px;
     font-size: $font-size-m;
+    max-width: 150px;
   }
   &--xl {
     padding: 10px 20px;
     font-size: $font-size-s;
+    max-width: 200px;
   }
   &--fix {
     width: 100px;
