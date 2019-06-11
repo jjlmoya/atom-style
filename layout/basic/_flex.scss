@@ -38,6 +38,9 @@
     }
     &-row {
       flex-direction: row;
+      &--reverse {
+        flex-direction: row-reverse;
+      }
     }
   }
   &--align {

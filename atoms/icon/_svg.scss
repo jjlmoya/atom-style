@@ -6,6 +6,12 @@
       fill: $mono-color-0;
     }
   }
+  &--m {
+    svg {
+      width: 40px;
+      height: 40px;
+    }
+  }
   &:hover {
     path {
       fill: $mono-color-9;

@@ -1,0 +1,90 @@
+<article class="ml-article-rainbow a-border--rainbow a-mar-20 bs_theme">
+    <h3 class="a-text  a-text--blur a-text--secondary">
+        Prueba 1
+    </h3>
+    <p class="a-text a-text--blur a-text--secondary a-pad">
+        Una pequeña descripción de producto
+    </p>
+    <div class="ml-article-rainbow__button a-mar--top-40">
+        <a class="a-button a-button--rounded a-button a-button--s a-button--fade">
+            Leer
+        </a>
+    </div>
+    <picture class="a-image a-image--background l-position--absolute a-pad-0 ">
+        <img class="a-image l-column--1-1 a-image--cover" src=../../images/mock1.jpg>
+    </picture>
+</article>
+
+
+<script>
+    let visibilityRange = function () {
+
+        const isElementOnViewPort = el => {
+
+            const scroll = window.scrollY || window.pageYOffset,
+                  boundsTop = el.getBoundingClientRect().top + scroll;
+
+            const viewport = {
+                top: scroll,
+                bottom: scroll + window.innerHeight,
+            };
+
+            const bounds = {
+                top: boundsTop,
+                bottom: boundsTop + el.clientHeight,
+            };
+
+            return (bounds.bottom >= viewport.top && bounds.bottom <= viewport.bottom)
+                || (bounds.top <= viewport.bottom && bounds.top >= viewport.top);
+        },
+
+
+             locators = {
+            trigger: ".js-visibility-range",
+            state: {
+                visible: ".is-visible",
+                hidden: ".is-hidden"
+            }
+        },
+
+
+         toggleElementVisibility = (el, shouldBeHidden, currentStatus) => {
+            console.log(shouldBeHidden)
+
+            let shouldToggleClass = shouldBeHidden !== currentStatus;
+
+
+            el.classList.toggle("is-visible", !shouldToggleClass);
+        },
+         checkVisibility = () => {
+
+            document.querySelectorAll(locators.trigger).forEach((el) => {
+
+                let id = el.dataset.id,
+                    currentStatus = el.classList.contains(locators.state.hidden);
+                document.querySelectorAll(`[data-visibility-limit="${id}"]`).forEach((limit) => {
+                    let shouldBeHidden = isElementOnViewPort(limit);
+
+                    toggleElementVisibility(el, shouldBeHidden, currentStatus);
+
+                });
+
+
+            });
+
+        },
+         bindEvents = () => {
+            window.addEventListener('scroll', checkVisibility, true);
+        },
+
+         init = () => {
+            if (document.querySelectorAll(locators.trigger).length > 0) {
+                bindEvents();
+            }
+        };
+        return {
+            init: init
+        };
+
+    }();
+</script>

@@ -1,3 +1,9 @@
+// Rainbow
+//
+// Markup:
+//  <div class="a-bg--mono-0 a-border--rainbow bs_theme {{modifier_class}} bs_theme" style="width:300px; height:300px"></div>
+//
+// Styleguide Atoms.Border.Rainbow
 .a-border--rainbow {
   position: relative;
   &:before, &:after {
@@ -7,11 +13,10 @@
     left: -2px;
     right: -2px;
     bottom: -2px;
-    z-index: -1;
+    z-index: -2;
     opacity: 0;
     transform: skew(2deg, 2deg);
   }
-
 
   &:before {
     @include a-animation--fade(3s, 0s);

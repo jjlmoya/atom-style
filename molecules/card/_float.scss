@@ -1,0 +1,16 @@
+.ml-card-float {
+  margin: 20px;
+  width: 280px;
+  height: 140px;
+  transition: all .4s ease;
+  z-index: 3;
+  background-image: linear-gradient(135deg, $primary-color, $primary-color-dark);
+
+  &:hover {
+    transform: scale(1.2);
+    &:after {
+      transform: translateX(100%);
+      transition: all 1.2s ease-in-out;
+    }
+  }
+}

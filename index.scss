@@ -17,7 +17,6 @@
 @import "atoms/animations/bell";
 @import "atoms/animations/bg";
 @import "atoms/animations/fade";
-
 @import "atoms/image/shape";
 @import "atoms/background/color";
 @import "atoms/background/shape";
@@ -26,14 +25,12 @@
 @import "atoms/borders/types";
 @import "atoms/borders/position";
 @import "atoms/borders/rainbow";
+//DOC-OK
 @import "atoms/separator/color";
 @import "atoms/icon/svg";
 /** ASSETS **/
 @import "atoms/media/cursor";
 /** ANIMATIONS **/
-
-
-
 @import "atoms/microinteractions/index";
 @import "atoms/microinteractions/bounce";
 @import "atoms/microinteractions/color";
@@ -59,7 +56,7 @@ body {
 @import "utils/shadow/index";
 /** MOLECULES  **/
 
-@import "molecules/block/articles/rainbow";
+@import "molecules/block/articles/rainbow"; //DOC-OK
 @import "molecules/block/articles/minimalist";
 @import "molecules/block/articles/extract";
 @import "molecules/block/articles/slim";
@@ -76,6 +73,7 @@ body {
 @import "molecules/card/articles/road"; //gitDOC-OK
 @import "molecules/card/sample";
 @import "molecules/card/author";
+@import "molecules/card/float";
 
 @import "molecules/box/index";
 @import "molecules/slider/arrow";
@@ -121,7 +119,7 @@ body {
 @import "organisms/block/cards-background"; //DOC-OK
 @import "organisms/block/road"; //DOC-OK
 @import "organisms/block/quark"; //DOC-OK
-@import "organisms/block/articles/image";
-@import "organisms/block/articles/rainbow";
+@import "organisms/block/articles/image"; //DOC-OK
+@import "organisms/block/articles/rainbow"; //DOC-OK
 
 @import "atoms/wordpress/index";

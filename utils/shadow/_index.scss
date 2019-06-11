@@ -1,8 +1,12 @@
 .u-shadow {
+  box-shadow: 1px 1px 16px 0 rgba(0, 0, 0, 0.2);
   &--bottom {
     box-shadow: 0 2px 4px 0 $shadow-dark;
   }
   &--top {
     box-shadow: 0 -2px 4px 0 $shadow-dark;
+  }
+  &--expanded {
+    box-shadow: 20px 20px 60px rgba(34, 50, 84, 0.5), 1px 1px 0px 1px $primary-color;
   }
 }
