@@ -27,17 +27,17 @@ a.a-button, .a-button {
   &--s {
     padding: 5px 15px;
     font-size: $font-size-s;
-    max-width: 100px;
+    max-width: 125px;
   }
   &--m {
     padding: 5px 20px;
     font-size: $font-size-m;
-    max-width: 150px;
+    max-width: 175px;
   }
   &--xl {
     padding: 10px 20px;
     font-size: $font-size-s;
-    max-width: 200px;
+    max-width: 250px;
   }
   &--fix {
     width: 100px;
