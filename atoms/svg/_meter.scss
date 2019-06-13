@@ -1,0 +1,71 @@
+.a-svg-meter {
+  height: 150px;
+  &--small {
+    transform: scale(0.5);
+  }
+  &__hand {
+    transform: rotate(-90deg);
+    transform-origin: 137px 140px;
+    transition: transform 1.2s ease-in-out;
+    fill: $primary-color;
+  }
+  &__dial {
+    stroke-width: 50;
+    stroke-dasharray: 100 500;
+    fill: none;
+    &--1 {
+      stroke-dashoffset: 305;
+      stroke: $success-color;
+    }
+    &--2 {
+      stroke-dashoffset: 200;
+      stroke: $warning-color;
+    }
+    &--3 {
+      stroke: $error-color;
+      stroke-dashoffset: 110;
+      stroke-dasharray: 50 3 30 2 20 1 10 500;
+    }
+  }
+  &__circle {
+    fill: $primary-color-dark;
+  }
+  &__number {
+    font-size: 40px;
+    font-weight: bold;
+    fill: $secondary-color-text;
+  }
+  @each $class, $value in $percentDegrees {
+    &.a-deg-#{$class} {
+      .a-svg-meter__hand {
+        transform: rotate(($value));
+      }
+    }
+    &.a-shake-#{$class} {
+      .a-svg-meter__hand {
+        animation: shaking-#{$class} 0.1s linear infinite;
+        animation-delay: 1.2s;
+      }
+    }
+  }
+}
+
+@keyframes shaking-80 {
+  0% {
+    transform: rotate(68deg);
+  }
+  100% {
+    transform: rotate(76deg);
+  }
+}
+
+@keyframes shaking-90 {
+  0% {
+    transform: rotate(78deg);
+  }
+  100% {
+    transform: rotate(85deg);
+  }
+}
+
+

@@ -36,6 +36,8 @@
 @import "atoms/microinteractions/color";
 @import "atoms/microinteractions/pulse";
 @import "atoms/microinteractions/float";
+/**SVG**/
+@import "atoms/svg/meter";
 
 body {
   font-size: $font-size-text;
