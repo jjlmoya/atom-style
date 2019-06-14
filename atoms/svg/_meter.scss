@@ -1,3 +1,22 @@
+// Speed-o-Meter
+//
+// Markup: svg-meter.html
+//
+// .a-deg-10 - Move 10%
+// .a-deg-20 - Move 20%
+// .a-deg-30 - Move 30%
+// .a-deg-40 - Move 40%
+// .a-deg-50 - Move 50%
+// .a-deg-60 - Move 60%
+// .a-deg-70 - Move 70%
+// .a-deg-80 - Move 80%
+// .a-deg-90 - Move 90%
+// .a-deg-100 - Move 100%
+// .a-deg-70.a-shake-70 - Constant Move Needle 70%
+// .a-deg-80.a-shake-80 - Constant Move Needle 80%
+// .a-deg-90.a-shake-90 - Constant Move Needle 90%
+//
+// Styleguide Atoms.SVG.meter
 .a-svg-meter {
   height: 150px;
   &--small {
@@ -47,6 +66,15 @@
         animation-delay: 1.2s;
       }
     }
+  }
+}
+
+@keyframes shaking-70 {
+  0% {
+    transform: rotate(56deg);
+  }
+  100% {
+    transform: rotate(62deg);
   }
 }
 
