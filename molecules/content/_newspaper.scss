@@ -1,0 +1,19 @@
+// Content Newspaper
+//
+// Markup: contentNewspaper.html
+//
+//.is-reverse - Invertido
+//
+// Styleguide Molecules.Content.Newspaper
+.ml-content-newspaper {
+  &.is-reverse {
+    .ml-content-newspaper {
+      &__image {
+        order: 1;
+      }
+      &__content {
+        order: 0
+      }
+    }
+  }
+}
