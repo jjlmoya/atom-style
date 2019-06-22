@@ -21,6 +21,7 @@
 @import "atoms/background/color";
 @import "atoms/background/shape";
 @import "atoms/background/gradient";
+@import "atoms/background/splash";
 @import "atoms/spaces/separator";
 @import "atoms/borders/types";
 @import "atoms/borders/position";
@@ -55,7 +56,9 @@ body {
 @import "utils/devices/index";
 @import "utils/overflow/index";
 @import "utils/display/index";
+@import "utils/display/step";
 @import "utils/shadow/index";
+
 /** MOLECULES  **/
 
 @import "molecules/block/articles/rainbow"; //DOC-OK

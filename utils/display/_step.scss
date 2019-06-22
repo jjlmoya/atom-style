@@ -1,0 +1,38 @@
+.bs_step {
+  display: none;
+  animation: stepping-out 1s linear;
+  &.is-active {
+    animation: stepping-in 1s linear;
+    display: block;
+  }
+}
+
+@keyframes stepping-in {
+  0% {
+    opacity: 0;
+  }
+  1% {
+    opacity: 0.2;
+  }
+  2% {
+    opacity: 0.3;
+  }
+  90% {
+    opacity: 1;
+  }
+}
+
+@keyframes stepping-out {
+  0% {
+    opacity: 1;
+  }
+  1% {
+    opacity: 0.5;
+  }
+  2% {
+    opacity: 0.3;
+  }
+  90% {
+    opacity: 0;
+  }
+}

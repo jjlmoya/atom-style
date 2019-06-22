@@ -15,4 +15,13 @@
       z-index: -1;
     }
   }
+  &--no-repeat {
+    background-repeat: no-repeat;
+  }
+  &--amplify {
+    background-size: 300%;
+  }
+  &--bottom {
+    background-position: bottom;
+  }
 }
