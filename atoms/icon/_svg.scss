@@ -1,4 +1,5 @@
 .a-svg {
+  background: none;
   svg {
     width: 20px;
     height: 20px;
@@ -12,20 +13,17 @@
       height: 40px;
     }
   }
-  &:hover {
-    path {
-      fill: $mono-color-9;
+  &--secondary {
+    svg {
+      path {
+        fill: $secondary-color;
+      }
     }
   }
   &--brand {
     svg {
       path {
         fill: $primary-color;
-      }
-    }
-    &:hover {
-      path {
-        fill: $secondary-color;
       }
     }
   }

@@ -24,4 +24,18 @@
   &--smooth {
     border-radius: 5px;
   }
+  &--hover {
+    &--primary:hover {
+      border-color: $primary-color;
+    }
+    &--dark:hover {
+      border-color: $primary-color-dark;
+    }
+    &--light:hover {
+      border-color: $primary-color-light;
+    }
+    &--secondary:hover {
+      border-color: $secondary-color;
+    }
+  }
 }

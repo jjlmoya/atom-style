@@ -27,5 +27,9 @@
   &--grayscale {
     filter: grayscale(100%);
   }
+
+  &--opacity {
+    background-color: rgba($primary-color-rgb, 0.5);
+  }
 }
 
