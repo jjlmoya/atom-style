@@ -12,13 +12,10 @@
 // .a-deg-80 - Move 80%
 // .a-deg-90 - Move 90%
 // .a-deg-100 - Move 100%
-// .a-deg-70.a-shake-70 - Constant Move Needle 70%
-// .a-deg-80.a-shake-80 - Constant Move Needle 80%
-// .a-deg-90.a-shake-90 - Constant Move Needle 90%
 //
 // Styleguide Atoms.SVG.meter
 .a-svg-meter {
-  height: 150px;
+  width: 100px;
   &--small {
     transform: scale(0.5);
   }
@@ -57,43 +54,31 @@
   @each $class, $value in $percentDegrees {
     &.a-deg-#{$class} {
       .a-svg-meter__hand {
+        animation: meter-#{$class} 1.2s ease-in forwards, shaking-#{$class} 100ms 1.2s infinite;
         transform: rotate(($value));
       }
     }
-    &.a-shake-#{$class} {
-      .a-svg-meter__hand {
-        animation: shaking-#{$class} 0.1s linear infinite;
-        animation-delay: 1.2s;
+  }
+}
+
+@each $class, $value in $percentDegrees {
+  @keyframes meter-#{$class} {
+    0% {
+      transform: rotate(#{nth($percentDegrees, 1)}deg);
+    }
+    100% {
+      transform: rotate(#{$value}deg);
+    }
+  }
+  @if ($value >= 40) {
+    @keyframes shaking-#{$class} {
+      0% {
+        transform: rotate(#{$value - 3}deg);
+      }
+      100% {
+        transform: rotate(#{$value + 3}deg);
       }
     }
   }
 }
-
-@keyframes shaking-70 {
-  0% {
-    transform: rotate(56deg);
-  }
-  100% {
-    transform: rotate(62deg);
-  }
-}
-
-@keyframes shaking-80 {
-  0% {
-    transform: rotate(68deg);
-  }
-  100% {
-    transform: rotate(76deg);
-  }
-}
-
-@keyframes shaking-90 {
-  0% {
-    transform: rotate(78deg);
-  }
-  100% {
-    transform: rotate(85deg);
-  }
-}
-
 
