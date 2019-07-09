@@ -1,0 +1,28 @@
+// BREAKING POINTS
+$screen-xl: 1200px;
+$screen-lg: 992px;
+$screen-md: 768px;
+
+.og-masonry {
+  column-count: 4;
+  column-gap: 1em;
+  &__item {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: .5em;
+    .a-img-masonry {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: $media-size-l) {
+    column-count: 3;
+  }
+  @media only screen and (max-width: $media-size-m) {
+    column-count: 2;
+  }
+  @media only screen and (max-width: $media-size-sm) {
+    column-count: 1;
+  }
+}
