@@ -1,0 +1,18 @@
+.bs_tooltip {
+  position: relative;
+}
+
+$tipster-bg: #2a2a2a;
+.a-tooltip {
+  position: absolute;
+  padding: 10px;
+  max-width: 220px;
+  text-align: center;
+  color: #fff;
+  background: #2a2a2a;
+
+  &--top {
+    bottom: 25px;
+    left: -25px;
+  }
+}
