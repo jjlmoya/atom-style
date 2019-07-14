@@ -1,18 +1,15 @@
 .bs_tooltip {
   position: relative;
+  cursor: pointer;
 }
 
-$tipster-bg: #2a2a2a;
 .a-tooltip {
   position: absolute;
   padding: 10px;
   max-width: 220px;
   text-align: center;
-  color: #fff;
-  background: #2a2a2a;
-
-  &--top {
-    bottom: 25px;
-    left: -25px;
-  }
+  color: $mono-color-0;
+  background: $mono-color-8;
+  bottom: 25px;
+  left: -25px;
 }
