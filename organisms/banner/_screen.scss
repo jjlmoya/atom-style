@@ -7,6 +7,10 @@
 .og-banner-screen {
   height: 100vh;
   width: 100vw;
+  &__logo {
+    width: 100px;
+    height: 100px;
+  }
   &__image {
     display: block;
     max-height: 300px;

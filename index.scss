@@ -17,6 +17,7 @@
 @import "atoms/animations/bell";
 @import "atoms/animations/bg";
 @import "atoms/animations/fade";
+@import "atoms/animations/vanish";
 @import "atoms/image/shape";
 @import "atoms/image/logo";
 @import "atoms/background/color";
@@ -38,6 +39,8 @@
 @import "atoms/microinteractions/color";
 @import "atoms/microinteractions/pulse";
 @import "atoms/microinteractions/float";
+
+@import "atoms/splash/index";
 
 @import "atoms/tooltip/index";
 

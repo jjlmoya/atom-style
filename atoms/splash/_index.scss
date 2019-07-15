@@ -1,0 +1,7 @@
+.a-splash {
+  &--fade {
+    &.is-loaded {
+      animation: vanish 3s ease-in-out forwards;
+    }
+  }
+}
