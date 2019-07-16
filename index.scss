@@ -66,6 +66,7 @@ body {
 @import "utils/display/step";
 @import "utils/shadow/index";
 
+@import "pages/wordpress/index";
 /** MOLECULES  **/
 
 @import "molecules/block/articles/rainbow"; //DOC-OK
@@ -138,4 +139,3 @@ body {
 @import "organisms/block/articles/rainbow"; //DOC-OK
 @import "organisms/block/masonry"; //DOC-OK
 
-@import "pages/wordpress/index";
