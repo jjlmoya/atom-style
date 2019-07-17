@@ -25,6 +25,15 @@
   word-spacing: 1px;
   font-size: $font-size-s;
   line-height: 25px;
+
+  & > strong, b {
+    color: $primary-color-dark;
+    font-weight: bold;
+  }
+
+  & > em, i {
+    text-decoration: underline;
+  }
 }
 
 & > strong, b {
@@ -42,6 +51,35 @@
   li {
     padding-left: 5px;
   }
+}
+
+& > table {
+
+  thead {
+    width: 400px;
+    background: $primary-color;
+    color: $secondary-color-text;
+    text-align: left;
+  }
+
+  tbody {
+    display: block;
+    width: 100%;
+    overflow: auto;
+    height: 25rem;
+  }
+
+  thead tr {
+    display: block;
+    cursor: pointer;
+  }
+
+  th, td {
+    padding: 5px;
+    text-align: left;
+    width: 400px;
+  }
+
 }
 
 & > figure {

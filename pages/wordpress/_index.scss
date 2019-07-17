@@ -1,4 +1,5 @@
 .p-wordpress {
+  min-height: 650px;
   @import 'elements/index';
   @import 'blocks/block-image';
   @import 'blocks/gallery-item';
