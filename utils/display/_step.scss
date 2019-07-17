@@ -1,10 +1,12 @@
 .bs_step {
+  animation: stepping-out 3s linear forwards;
   display: none;
-  animation: stepping-out 1s linear;
   &.is-active {
-    animation: stepping-in 1s linear;
+    animation: stepping-in 3s linear forwards;
     display: block;
+    margin: 0 auto;
   }
+
 }
 
 @keyframes stepping-in {
@@ -20,10 +22,14 @@
   90% {
     opacity: 1;
   }
+  100% {
+    display: block;
+  }
 }
 
 @keyframes stepping-out {
   0% {
+    display: block;
     opacity: 1;
   }
   1% {
@@ -34,5 +40,9 @@
   }
   90% {
     opacity: 0;
+
+  }
+  100% {
+    display: none;
   }
 }
