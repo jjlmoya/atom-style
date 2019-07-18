@@ -6,6 +6,9 @@
   }
   &--absolute {
     position: absolute;
+    &--anchor {
+      top: -50px;
+    }
     &--center {
       left: 0;
       right: 0;
