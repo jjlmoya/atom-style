@@ -1,8 +1,9 @@
 .og-filter-linear {
-  max-width: 100px;
   background-image: linear-gradient(180deg, #f9007e, transparent);
-
   .ml.ml-button-pill {
     padding: 0;
+  }
+  &--vertical {
+    max-width: 100px;
   }
 }
