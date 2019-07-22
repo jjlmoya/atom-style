@@ -1,0 +1,12 @@
+.og-menu-classic {
+  position: fixed;
+  right: 0;
+  transform: translateX(200vw);
+  height: 100vh;
+  width: 80vw;
+  transition: 1s ease-in-out;
+
+  &.is-active {
+    transform: translateX(0);
+  }
+}

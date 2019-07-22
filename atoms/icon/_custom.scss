@@ -1,0 +1,5 @@
+.a-svg--burger {
+  & path:first-child {
+    fill: $primary-color;
+  }
+}
