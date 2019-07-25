@@ -1,19 +1,22 @@
 .ml-arrow {
   position: absolute;
+  svg {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    fill: $mono-color-0;
+  }
   &--right {
     right: 0;
-    transform: rotate(180deg);
   }
   &--left {
+    transform: rotate(180deg);
     left: 0;
   }
   &--full {
-    height: 25px;
-    width: 25px;
     padding: 25px;
     margin: 0 10px;
     border-radius: 50%;
-    font-weight: bold;
     background-color: $mono-color-9;
   }
 }
