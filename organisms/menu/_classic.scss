@@ -1,4 +1,5 @@
 .og-menu-classic {
+  display: none;
   position: fixed;
   right: 0;
   transform: translateX(200vw);
@@ -8,5 +9,12 @@
 
   &.is-active {
     transform: translateX(0);
+  }
+}
+
+
+@media only screen and (max-width: 720px) {
+  .og-menu-classic {
+    display: block;
   }
 }
