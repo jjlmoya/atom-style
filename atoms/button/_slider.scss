@@ -9,7 +9,17 @@
 // Styleguide Atoms.Button.Slider
 
 .a-button--slider {
+  background-color: $mono-color-0;
+  opacity: 0.5;
+
   &.is-active {
     background-color: $secondary-color;
+    opacity: 0.9;
+  }
+
+  &--pill {
+    width: 25px;
+    height: 10px;
+    border-radius: 25px;
   }
 }
