@@ -6,21 +6,19 @@
 
 .og-slider--simple {
   overflow: hidden;
+
   &__content {
-    display: flex;
-    overflow-x: scroll;
-    overflow-y: hidden;
+    display:grid;
+    grid-auto-flow: column;
+    overflow-x: auto;
     scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-    scroll-snap-points-x: repeat(100vw);
-    scroll-snap-type: mandatory;
-    &::-webkit-scrollbar, &::-webkit-scrollbar-thumb, &::-webkit-scrollbar-track {
-      display: none;
-    }
+    scroll-snap-type: x mandatory;
   }
+
   &__slide {
     flex-shrink: 0;
-    width: 100vw;
     height: 80vh;
+    width: 100vw;
+    scroll-snap-align: start;
   }
 }
