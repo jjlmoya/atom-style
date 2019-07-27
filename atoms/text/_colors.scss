@@ -1,17 +1,22 @@
 .a-text {
   text-decoration: none;
   color: $primary-color-text;
+
   &--link:hover {
     color: $secondary-color;
   }
+
   &--link--secondary:hover {
     color: $mono-color-2;
   }
+
   &--secondary {
     color: $secondary-color-text;
   }
+
   &--brand {
     color: $primary-color;
+
     &--light {
       color: $primary-color-light;
     }
@@ -20,24 +25,41 @@
   &--brand--secondary {
     color: $secondary-color;
   }
+
   &--contrast {
     color: $contrast-color;
   }
+
   &--link {
     cursor: pointer;
   }
+
   &--success {
     color: $success-color;
   }
+
   &--blur {
     text-shadow: 0 0 4px $primary-color-text;
   }
+
   &--shadow {
     background: $gradient-contrast;
     color: transparent;
     text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
     background-clip: text;
   }
+
+  &--inset {
+    background-color: $mono-color-9;
+    font-weight: bold;
+    color: transparent;
+    text-shadow: 0px 2px 3px $primary-color-light;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    font-size: 130px;
+  }
+
   @each $class, $value in $monoColors {
     &--mono-#{$class} {
       color: $value;
