@@ -20,6 +20,9 @@
 @import "atoms/animations/vanish";
 @import "atoms/image/shape";
 @import "atoms/image/logo";
+
+@import "atoms/texture/index";
+
 @import "atoms/background/color";
 @import "atoms/background/shape";
 @import "atoms/background/gradient";
@@ -144,4 +147,6 @@ body {
 
 
 @import "organisms/filters/linear"; //DOC-OK
+
+
 
