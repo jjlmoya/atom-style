@@ -1,5 +1,6 @@
 .a-texture {
   position: relative;
+
   &--dot {
     &:after {
       content: "";
@@ -14,5 +15,9 @@
       );
       background-size: 5px 5px;
     }
+  }
+
+  &--paper {
+    mask-image: url('../textures/paper.png');
   }
 }
