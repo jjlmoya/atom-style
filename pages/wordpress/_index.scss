@@ -3,46 +3,7 @@
   @import 'elements/index';
   @import 'blocks/block-image';
   @import 'blocks/gallery-item';
-}
-
-
-.alignleft, .alignright, .aligncenter, .alignnone {
-  display: flex;
-  max-width: 100%;
-  flex-direction: column;
-  img {
-    object-fit: contain;
-    max-width: 100%;
-  }
-}
-
-div.alignright {
-  width: 100% !important;
-}
-.alignright {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-
-  img {
-    text-align: right;
-    margin-left: auto;
-    display: block;
-  }
-}
-
-.aligncenter {
-  text-align: center;
-}
-
-.alignleft {
-  text-align: left;
-}
-
-.alignnone {
+  @import 'elements/images';
 
 }
 
-.wp-caption {
-  max-width: 100%;
-}
