@@ -20,5 +20,10 @@
     height: 80vh;
     width: 100vw;
     scroll-snap-align: start;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+    &.is-active {
+      opacity: 1;
+    }
   }
 }
