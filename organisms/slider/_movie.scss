@@ -1,0 +1,45 @@
+.og-slider--movie {
+  overflow: hidden;
+
+  &__content {
+    display: grid;
+    grid-auto-flow: column;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    width: 80vw;
+    height: 50vh;
+
+    &::-webkit-scrollbar, &::-webkit-scrollbar-thumb, &::-webkit-scrollbar-track {
+      display: none;
+    }
+  }
+
+  .ml-arrow {
+    top: 50%;
+
+    &--left {
+      left: 0;
+    }
+
+    &--right {
+      right: 20vw;
+    }
+
+  }
+
+  &__nav {
+    background-color: black;
+    width: 20vw;
+  }
+
+  &__slide {
+    height: 100%;
+    width: 80vw;
+    scroll-snap-align: start;
+
+    &.is-active {
+      opacity: 1;
+    }
+  }
+}
