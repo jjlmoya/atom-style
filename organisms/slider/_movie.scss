@@ -16,6 +16,7 @@
   }
 
   .ml-arrow {
+    opacity: 0.5;
     top: 50%;
 
     &--left {
@@ -30,15 +31,18 @@
 
   &__nav {
     width: 20vw;
+
   }
 
   &__slide {
     height: 100%;
     width: 80vw;
     scroll-snap-align: start;
+    will-transform: border;
+    transition: all 1s ease;
 
     &.is-active {
-      opacity: 1;
+      border-right: 4px solid $primary-color;
     }
   }
 }

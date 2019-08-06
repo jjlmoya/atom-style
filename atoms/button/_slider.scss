@@ -22,11 +22,18 @@
     height: 10px;
     border-radius: 25px;
   }
+
   &--title {
     color: $primary-color;
     background-color: inherit;
+    line-height: 14px;
+    padding: 10px 0;
+    letter-spacing: 0;
+    border-left: 10px solid $mono-color-9;
     &.is-active {
-      box-shadow: 0 2px 4px 0 $shadow-dark;
+      background-color: $mono-color-1;
+      font-weight: bold;
+      border-color: $primary-color;
     }
   }
 }
