@@ -13,8 +13,8 @@
   opacity: 0.5;
 
   &.is-active {
-    background-color: $secondary-color;
     opacity: 0.9;
+    background-color: $secondary-color;
   }
 
   &--pill {
@@ -24,16 +24,39 @@
   }
 
   &--title {
+    text-align: center;
     color: $primary-color;
-    background-color: inherit;
     line-height: 14px;
-    padding: 10px 0;
+    padding: 0 10px;
     letter-spacing: 0;
     border-left: 10px solid $mono-color-9;
+
+    &__description {
+      margin: 0 auto;
+      overflow: hidden;
+      max-height: 0;
+      font-weight: normal;
+      transition: max-height 1s linear;
+      color: $primary-color-text;
+      font-size: $font-size-s;
+    }
+
     &.is-active {
       background-color: $mono-color-1;
       font-weight: bold;
       border-color: $primary-color;
+
+      .a-button--slider--title__description {
+        transition-duration: 5s;
+        transition-delay: 1s;
+        max-height: 600px;
+        overflow: auto;
+        &:after {
+          content: ' ';
+          height: 10px;
+          display: block;
+        }
+      }
     }
   }
 }
