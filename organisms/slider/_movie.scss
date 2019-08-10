@@ -46,3 +46,25 @@
     }
   }
 }
+
+
+@media only screen and (max-width: $media-size-m) {
+  .og-slider--movie {
+    flex-wrap: wrap;
+    &__content {
+      width: 100vw;
+    }
+
+    &__nav {
+      width: 100vw;
+    }
+
+    &__slide {
+      width: 100vw;
+    }
+    .ml-arrow--right {
+      right: 0;
+    }
+  }
+
+}
