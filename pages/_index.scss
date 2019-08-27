@@ -1,0 +1,51 @@
+.p-wheel-of-time {
+  width: 100vw;
+  height: 100vh;
+  background-color: $mono-color-9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .image {
+    width: 200px;
+    object-fit: cover;
+  }
+
+  .timer {
+    text-align: center;
+    width: 300px;
+    color: rgb(255, 255, 255);
+    margin: 0 auto;
+  }
+
+  .days,
+  .hours,
+  .mins,
+  .sec {
+    margin: 10px 0;
+    width: 24%;
+    float: left;
+    font-size: 35px;
+    font-weight: lighter;
+    text-align: center;
+  }
+
+  .days,
+  .hours,
+  .mins {
+    border-right: 2px solid rgb(255, 255, 255);
+  }
+
+  @media all and (max-width: 650px) {
+    h1 {
+      font-size: 50px;
+    }
+    .days,
+    .hours,
+    .mins,
+    .sec {
+      font-size: 40px;
+    }
+  }
+}
